@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/23851a0fdc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button class="nav-responsive" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-list" id="navList">
+                <li><a href="#">BEST SELLER</a></li>
+                <li><a href="#">OUR PRODUCT</a></li>
+                <li><a href="#">BE OUR PARTNER</a></li>
+            </ul>
+            <div class="nav-logo">
+                Vikings.
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="landing-page">
+            <article id="landing">
+                <img src="./assets/viking-landing-image.jpg" alt="">
+                <div class="centered-text">
+                    <p class="landing-text">Vikings.</p>
+                </div>
+            </article>
+
+            <aside id="aside-landing">
+                <div class="profile-container">
+                    <img src="./assets/profile-image.jpg" alt="">
+                </div>
+                <p class="intro-text">Dionisius Darrel</p>
+                <ul class="social-media">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <article id="best-seller">
+            <p class="text-title">Our Best Products</p>
+            <div class="display-container">
+                <div class="display-item"><img src="./assets/display-1.jpg" alt=""></div>
+                <div class="display-item"><img src="./assets/display-2.jpg" alt=""></div>
+                <div class="display-item"><img src="./assets/display-3.jpg" alt=""></div>
+                <div class="display-item"><img src="./assets/display-4.jpg" alt=""></div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="company">
+            <p class="footer-title">Company</p>
+            <ul class="footer-list">
+                <li>Our Stores</li>
+                <li>Contact Us</li>
+                <li>Company Profile</li>
+            </ul>
+        </div>
+        <div class="store">
+            <p class="footer-title">Our Store</p>
+            <ul class="footer-list">
+                <li>Jl. Setiabudi No.26, Bandung</li>
+                <li>Jl. Setiabudi No.72, Bandung</li>
+                <li>Jl. Asia Afrika No.1, Bandung</li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <p>Clothing Store &#169; 2022, Vikings.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navList = document.getElementById('navList');
+
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        })
+
+    </script>
+</body>
+
+</html>
